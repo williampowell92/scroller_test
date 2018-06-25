@@ -49,8 +49,9 @@
         this.center.x -= 3;
       }
 
-      if (this.keyboarder.isDown(this.keyboarder.KEYS.SPACE)) {
-        this.velocity.y = -10;
+      if (this.keyboarder.isDown(this.keyboarder.KEYS.SPACE)
+    && this.center.y > gameSize.y - this.size.y / 2 - 1) {
+        this.velocity.y = -25;
       }
 
       this.center.y = Math.min(
