@@ -28,6 +28,7 @@ Player.prototype = {
   },
 
   draw(screen) {
+    screen.fillStyle = 'black';
     screen.fillRect(
       this.center.x - this.size.x / 2,
       this.center.y - this.size.y / 2,

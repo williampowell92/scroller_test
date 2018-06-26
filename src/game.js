@@ -26,6 +26,9 @@ Game.prototype = {
   draw(screen, gameSize) {
     screen.clearRect(0, 0, gameSize.x, gameSize.y);
 
+    screen.fillStyle = 'pink';
+    screen.fillRect(0, 0, gameSize.x, gameSize.y);
+
     this.bodies.forEach((body) => {
       body.draw(screen);
     });
